@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+.env.*
+!.env.example
+*.py[cod]
+
+monitoring.sqlite3*
+node_modules/
+.expo/
+dist/
+*.pem

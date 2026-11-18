@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "\uC218\uC11C\uC5ED \uD718\uCCB4\uC5B4 \uB2E8\uB9D0\uAE30",
+    "slug": "suseo-wheelchair-tracker",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "splash": {
+      "backgroundColor": "#0B1220",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "bundleIdentifier": "com.suseo.wheelchairtracker",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "휠체어 단말기의 현재 위치를 관제 대시보드에 표시하기 위해 위치 정보를 사용합니다.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "앱이 화면에 없을 때도 휠체어 위치를 관제 대시보드에 전송하기 위해 위치 정보를 사용합니다."
+      }
+    },
+    "android": {
+      "package": "com.suseo.wheelchairtracker",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_LOCATION"
+      ]
+    },
+    "plugins": [["expo-location", {
+      "isAndroidForegroundServiceEnabled": true,
+      "isAndroidBackgroundLocationEnabled": true,
+      "isIosBackgroundLocationEnabled": true
+    }]],
+    "extra": { "eas": { "projectId": "b50b23fa-f054-4c00-8204-e4d4027e251b" } },
+    "owner": "seungyonglees-team",
+    "userInterfaceStyle": "light"
+  }
+}
